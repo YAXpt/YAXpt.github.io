@@ -1,0 +1,57 @@
+header{
+    text-align: center;
+    margin: auto;
+    color:white;
+}
+
+body{
+    background-image:url(https://images.unsplash.com/photo-1630121008235-22acfe348ed1);
+    background-size: cover;
+    color:rgb(250, 2550, 255);
+}
+#personatges, .cases{
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+h2{
+    color: rgb(240, 240, 255);
+}
+h3{
+    color: rgb(195, 195, 255);
+}
+h4{
+    color: rgb(150, 150, 255);
+}
+
+.quadricula {
+    flex-direction: row;
+    display: flex;
+    line-height: 1;
+}
+
+.quadrat {
+    text-align: center;
+    width: 15em;
+    height: 15em;
+    background-size: cover;
+    background-position: center;
+}
+
+.elemFlotant{
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 250px; 
+    background-color:rgb(8, 8, 86);
+}
+
+@media (max-width: 600px) {
+    .quadricula {
+        flex-direction: column;
+    }
+    .elemFlotant {
+        width: 120px;
+        font-size: small;
+    }
+}
